@@ -3,25 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link  rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
-      <h1>Hello word</h1>
+    <header class="header">
+      <div class="container header__container">
+      <img src="./images/logo.svg" alt="Logo de la compañia" 
+      width="145"
+      height="35"/>
+      <nav class="header__nav">
+        <ul>
+          <li>
+            <a href="#" class="active">Home</a>
+          </li>
+          <li>
+            <a href="#">Community</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Events</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <form class="header__search" action="">
+          <img src="./images/icon-search.svg" alt="icono of search" width="16px" height="16px"/>
+        <input type="search" aria-label="search" placeholder="Search Here..." />
+      </form>
+      <a href="/login" class="btn">Log in</a>
+      </div>
+    </div>
     </header>
     <main>
       <section class="hero"></section>
       <div class="clients"></div>
-      <section class="features-1">
+      <section class="whats-netboks">
         <article></article>
         <article></article>
       </section>
-      <section class="benefits"></section>
-      <section class="gdpr"></section>
-      <section class="features-2"></section>
-      <section class="blogs"></section>
+      <section class="community"></section>
+      <section class="members"></section>
+      <section class="app"></section>
+      <section class="news"></section>
     </main>
     <footer></footer>
   </body>
