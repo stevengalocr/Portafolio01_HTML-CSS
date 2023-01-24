@@ -116,7 +116,7 @@ a {
 .btn--secundary {
   background-color: transparent;
   border: solid 1px var(--color-primary);
-  color: var(--color-primary)
+  color: var(--color-primary);
 }
 
 .btn--large {
@@ -134,7 +134,7 @@ a {
   padding: 1.5rem 0;
 }
 
-.header__container{
+.header__container {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 145px 1fr auto;
@@ -173,7 +173,7 @@ a {
 }
 
 .prime {
-  background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
+  background: linear-gradient(311.76deg, #d4e7fe -15.24%, #ffffff 78.85%);
 }
 
 .hero {
@@ -205,8 +205,8 @@ a {
 }
 
 .hero_cta {
- display: flex;
- gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .whats-netbooks {
@@ -219,7 +219,7 @@ a {
 .whats-netbooks__images {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr;
   gap: 2rem;
   align-items: center;
   flex-shrink: 0;
@@ -257,10 +257,10 @@ a {
 }
 
 .whats-netbooks__content li::before {
-  content:"";
+  content: "";
   position: absolute;
   background-color: var(--color-primary);
-  border: solid 4px #E9F2FE;
+  border: solid 4px #e9f2fe;
   box-sizing: content-box;
   width: 8px;
   height: 8px;
@@ -268,5 +268,69 @@ a {
   top: 50%;
   transform: translateY(-50%);
   border-radius: 8px;
+}
 
+.achievement .card {
+  border: solid 1px transparent;
+  padding: 3rem 1.125rem 2.5rem 2.5rem;
+  background: linear-gradient(#fff, #fff) padding-box,
+              linear-gradient(to bottom, rgba(185, 185, 185, 0.44), rgba(94, 94, 94, 0.58)) border-box;
+  border-radius: 1rem;
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;;
+}
+
+.achievement .card:hover {
+  box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.24);
+  transform: translate(-4px, -4px);
+}
+
+.achievement {
+  display: grid;
+  grid-template-columns: 340px 430px 1fr;
+  gap: 24px;
+}
+
+.card.rating .card__title, .card.awards .card__title {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.achievement .card__subtitle b {
+  color: var(--color-primary)
+}
+
+.achievement .card__subtitle {
+  margin-bottom: 2.5rem;
+}
+
+.achievement .card__content {
+  margin-bottom: 32px;
+}
+
+.achievement .card a {
+  position: relative;
+  padding-right: 20px;
+}
+
+.achievement .card a:hover {
+  color: var(--color-primary)
+}
+
+
+/* .achievement .card a:after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  background-image: url("/images/Arrow.svg");
+  width: 10px;
+  height: 10px;
+} */
+
+.achievement .card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem
 }
