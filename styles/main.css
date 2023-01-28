@@ -6,12 +6,14 @@
 *::after {
   box-sizing: border-box;
 }
+
 /*
     2. Remove default margin
   */
 * {
   margin: 0;
 }
+
 /*
     3. Allow percentage-based heights in the application
   */
@@ -19,6 +21,7 @@ html,
 body {
   height: 100%;
 }
+
 /*
     Typographic tweaks!
     4. Add accessible line-height
@@ -28,6 +31,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+
 /*
     6. Improve media defaults
   */
@@ -39,6 +43,7 @@ svg {
   display: block;
   max-width: 100%;
 }
+
 /*
     7. Remove built-in form typography styles
   */
@@ -48,6 +53,7 @@ textarea,
 select {
   font: inherit;
 }
+
 /*
     8. Avoid text overflows
   */
@@ -60,6 +66,7 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
 /*
     9. Create a root stacking context
   */
@@ -111,6 +118,10 @@ a {
   align-items: center;
   line-height: 1;
   border-radius: 16px;
+}
+
+.btn svg {
+  margin-left: 1rem;
 }
 
 .btn--secundary {
@@ -274,9 +285,11 @@ a {
   border: solid 1px transparent;
   padding: 3rem 1.125rem 2.5rem 2.5rem;
   background: linear-gradient(#fff, #fff) padding-box,
-              linear-gradient(to bottom, rgba(185, 185, 185, 0.44), rgba(94, 94, 94, 0.58)) border-box;
+    linear-gradient(to bottom,
+      rgba(185, 185, 185, 0.44),
+      rgba(94, 94, 94, 0.58)) border-box;
   border-radius: 1rem;
-  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;;
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
 }
 
 .achievement .card:hover {
@@ -286,18 +299,20 @@ a {
 
 .achievement {
   display: grid;
-  grid-template-columns: 340px 430px 1fr;
+  grid-template-columns: 340px 340px 1fr;
   gap: 24px;
+  align-items: center;
 }
 
-.card.rating .card__title, .card.awards .card__title {
+.card.rating .card__title,
+.card.awards .card__title {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 2rem;
 }
 
-.achievement .card__subtitle b {
-  color: var(--color-primary)
+.achievement b {
+  color: var(--color-primary);
 }
 
 .achievement .card__subtitle {
@@ -308,29 +323,103 @@ a {
   margin-bottom: 32px;
 }
 
-.achievement .card a {
-  position: relative;
-  padding-right: 20px;
-}
-
 .achievement .card a:hover {
-  color: var(--color-primary)
+  color: var(--color-primary);
 }
-
-
-/* .achievement .card a:after {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  content: "";
-  background-image: url("/images/Arrow.svg");
-  width: 10px;
-  height: 10px;
-} */
 
 .achievement .card a {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem
+  gap: 0.5rem;
+  position: relative;
+  padding-right: 20px;
+}
+
+.achievement .card a:hover svg path {
+  stroke: var(--color-primary);
+}
+
+.achievement__content p:not(.card__subtitle) {
+  margin-bottom: 2rem;
+}
+
+.achievement__content {
+  margin-inline-start: auto;
+  width: 380px;
+}
+
+.community h2 {
+  font-size: 18px;
+  color: var(--color-primary);
+}
+
+.community h3 {
+  font-size: 36px;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.community {
+  padding: 80px 0;
+  background: linear-gradient(0deg,
+      rgba(241, 246, 253, 0) 1.63%,
+      #f1f6fd 20.5%,
+      #f1f6fd 58.57%,
+      #ffffff 100%);
+}
+
+.community__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(522px, 1fr));
+  gap: 40px;
+}
+
+.community__card {
+  padding: 2.5rem 4rem 2.5rem 2.5rem;
+  background: var(--color-white);
+  box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.community__card-content {}
+
+.community__card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 66px;
+  aspect-ratio: 1/1;
+  border-radius: 24px;
+}
+
+.community__blue .community__card-icon {
+  background: linear-gradient(154.49deg, #5ca1fe 6.61%, #217bf4 89.72%);
+  box-shadow: 0px 10px 22px -2px rgba(109, 171, 255, 0.36);
+}
+
+.community__red .community__card-icon {
+  background: linear-gradient(154.49deg, #ff858a 6.61%, #f04148 89.72%);
+  box-shadow: 0px 8px 22px -2px rgba(248, 87, 94, 0.3);
+}
+
+.community__yellow .community__card-icon {
+  background: linear-gradient(154.49deg, #ffd085 6.61%, #ffaf2e 89.72%);
+  box-shadow: 0px 10px 22px -2px rgba(250, 186, 84, 0.3);
+}
+
+.community__header {
+  width: 50%;
+  /* or any width you want */
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.community__items h3 {
+  font-size: 18px;
+  color: var(--color-heading);
 }
