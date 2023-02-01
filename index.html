@@ -17,7 +17,7 @@
     <header class="header">
       <div class="container header__container">
         <img src="./images/logo.svg" alt="Logo de la compañia" width="145" height="35" />
-        <nav class="header__nav">
+        <nav aria-label="Primary" class="header__nav">
           <ul>
             <li>
               <a href="#" class="active">Home</a>
@@ -307,7 +307,61 @@
       </div>
     </section>
   </main>
-  <footer></footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__main">
+      <nav aria-label="Secondary" class="footer__nav">
+        <div>
+          <h3>Home</h3>
+          <ul>
+            <li><a href="#"> </a>Home</li>
+            <li><a href="#"> </a>Community</li>
+            <li><a href="#"> </a>Event</li>
+            <li><a href="#"> </a>Contact</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#"> </a>Blog</li>
+            <li><a href="#"> </a>News</li>
+            <li><a href="#"> </a>Guides</li>
+            <li><a href="#"> </a>Help Center</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Community</h3>
+          <ul>
+            <li><a href="#"> </a>NewsFeed</li>
+            <li><a href="#"> </a>Profile</li>
+            <li><a href="#"> </a>Friends</li>
+            <li><a href="#"> </a>Forums</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Main Links</h3>
+          <ul>
+            <li><a href="#"> </a>Members</li>
+            <li><a href="#"> </a>Activity</li>
+            <li><a href="#"> </a>Groups</li>
+            <li><a href="#"> </a>Private Group</li>
+          </ul>
+        </div>
+      </nav>
+
+      <article class="footer_signup">
+        <h3>Subscribe Cirkle Newsletter</h3>
+        <p>Subscribe to be the first one to know about updates. Enter your email</p>
+
+        <form class="footer_singup-form" action="">
+          <label class="hide--text" for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Email Address"></input>
+          <button type="submit" class="btn btn--dark">Subscribe</button>
+           </form>
+      </article>
+    </div>
+    </div>
+  </footer>
 </body>
 
 </html>
