@@ -681,6 +681,46 @@ a.link__arrows:hover svg path {
   padding: 0 1.5rem;
 }
 
-.footer_signup h3 {
+.footer_singup h3 {
   width: 200px;
+}
+
+.footer_secundary {
+  background: #20202D;
+}
+
+.footer_secundary-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+  align-items: center;
+}
+
+.footer__social-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.footer__social-links a {
+  display: block;
+  background-color: var(--color-white);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_secundary-content > * {
+  flex: 1;
+}
+
+.footer__secundary-logo {
+  display: flex;
+  justify-content: center;
 }
